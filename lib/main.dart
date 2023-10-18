@@ -24,82 +24,70 @@ class MyApp extends StatelessWidget {
                 backgroundImage: AssetImage(
                   'assets/images/Sam.jpg',
                 ),
-                //child: Image.asset(),
               ),
-              Container(
-                child: Text(
-                  'Ayeni Samuel',
-                  style: TextStyle(
-                    fontSize: 30,
+              const Text(
+                'Ayeni Samuel',
+                style: TextStyle(
+                  fontFamily: 'Pacifico',
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              Text(
+                'FLUTTER INTERN',
+                style: TextStyle(
+                  fontFamily: 'SourceSan3',
+                  fontSize: 20,
+                  color: Colors.teal.shade100,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 2.5,
+                ),
+              ),
+              SizedBox(
+                height: 20,
+                width: 150,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
+              const Card(
+                margin: EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 15,
+                ),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    size: 20,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+234 703 515 4083',
+                    style: TextStyle(fontSize: 20, color: Colors.teal),
                   ),
                 ),
               ),
-              Container(
-                child: Text(
-                  'Flutter Developer',
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),
+              const Card(
+                margin: EdgeInsets.symmetric(
+                  vertical: 10,
+                  horizontal: 15,
                 ),
-              ),
-              Container(
-                margin: EdgeInsets.all(5),
-                width: 100,
-                decoration: BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(
-                      color: Colors.black,
-                      width: 1,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.mail,
+                    size: 20,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'connectwithayeni@gmail.com',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.teal,
                     ),
                   ),
                 ),
               ),
-              Container(
-                margin: EdgeInsets.all(5),
-                width: 370,
-                child: Card(
-                  child: Row(
-                    children: [
-                      Container(
-                        margin: EdgeInsets.all(15),
-                        child: Icon(Icons.phone, size: 20),
-                      ),
-                      Container(
-                        margin: EdgeInsets.all(20),
-                        child: Text(
-                          '+234 703 515 4083',
-                          style: TextStyle(
-                            fontSize: 20,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Container(
-                margin: EdgeInsets.all(5),
-                width: 370,
-                child: Card(
-                  child: Row(
-                    children: [
-                      Container(
-                        margin: EdgeInsets.all(15),
-                        child: Icon(Icons.mail, size: 20),
-                      ),
-                      Container(
-                        margin: EdgeInsets.all(20),
-                        child: Text(
-                          'connectwithayeni@gmail.com',
-                          style: TextStyle(
-                            fontSize: 20,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              )
             ],
           ),
         ),

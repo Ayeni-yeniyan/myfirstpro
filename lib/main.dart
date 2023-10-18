@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Text(
-                'FLUTTER INTERN',
+                'FLUTTER DEVELOPMENT INTERN',
                 style: TextStyle(
                   fontFamily: 'SourceSan3',
                   fontSize: 20,
